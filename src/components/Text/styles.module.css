@@ -1,0 +1,11 @@
+.wrapper {
+  font-size: 1rem;
+  color: #dbdbdb;
+}
+
+
+@media (max-width: 800px) {
+  .wrapper {
+    text-align:justify;
+  }
+}

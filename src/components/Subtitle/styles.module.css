@@ -1,0 +1,6 @@
+.wrapper {
+  font-size: 35px;
+  background: -webkit-linear-gradient(#61DAFB, #2196F3);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}

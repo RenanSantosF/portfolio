@@ -1,0 +1,91 @@
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.2rem;
+  align-items: center;
+  background-color: #333333;
+  box-shadow: 0px 4px 10px rgba(61, 61, 61, 0.3);
+  margin-bottom: 40px;
+  transition: 0.2s ease;
+}
+
+.container:hover {
+  background-color: #3d3d3d;
+}
+
+.container .imgProject {
+  width: 100%;
+}
+
+.container .imgProject img {
+  width: 100%;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.container .content {
+  padding: 2% 2% 2% 2.5%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleAndIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  width: auto;
+}
+
+.tecnologiesIcon {
+  width: auto;
+}
+
+.tecnologiesIcon div {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: space-between;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 550px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    width: 400px;
+  }
+
+  .content {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 880px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .container {
+    width: 100%;
+  }
+
+  .content {
+    gap: 10px;
+  }
+}

@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.container>.contat {
+  display: flex;
+  width: 100%;
+}
+
+.redes {
+  display: flex;
+  gap: 3%;
+}
+
+
+@media (max-width: 980px) {
+  .container {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .contat {
+    justify-content: center;
+  }
+
+  .redes {
+    display: flex;
+    justify-content: center;
+  }
+}

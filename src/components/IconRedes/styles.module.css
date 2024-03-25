@@ -1,0 +1,10 @@
+.container > a > img {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 0.3s ease;
+}
+
+.container > a > img:hover {
+  transform: translateY(-2px);
+}
+

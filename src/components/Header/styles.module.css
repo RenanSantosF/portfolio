@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  position: fixed;
+  top: 1%;
+  right: 10%;
+  left: 10%;
+  padding: 1.0%;
+  border-radius: 0.2rem;
+  background-color: #000000;
+  box-shadow: 0px 4px 10px rgba(24, 24, 24, 0.3);
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.base {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.list {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.listMenuClose {
+  gap: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.listMenuOpen {
+  gap: 10px;
+  width: 40%;
+  display: flex;
+}
+
+.imgHeader {
+  width: 20%;
+}
+
+.openMenu {
+  margin-right: 2px;
+  display: none;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.openMenu img {
+  width: 20px;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .listMenuClose {
+    display: none;
+  }
+
+  .listMenuOpen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .openMenu {
+    display: flex;
+  }
+}
