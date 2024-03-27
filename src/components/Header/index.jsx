@@ -5,15 +5,19 @@ import SpanHeader from "./SpanHeader";
 import imgMenuOpen from "../../assets/menuOpen.png";
 import imgMenuClose from "../../assets/menuClose.png";
 
-export default function Header({ imgHeader, id }) {
+const Header = ({ imgHeader, id }) => {
   const [menu, setmenu] = useState(false);
   const [altura, setAltura] = useState(90);
-  const [largura, setLargura] = useState(1200);
 
   const open = () => {
-    setmenu(menu === false ? true : false);
-    setAltura(altura === 90 ? 276.44 : 90);
-
+    setTimeout(() => {
+      setmenu(menu === false ? true : false);
+    }, 100)
+    
+    setTimeout(() => {
+      setAltura(altura === 90 ? 276.44 : 90);
+    }, 100)
+    
 
     console.log(list, altura, menu);
   };
@@ -28,12 +32,15 @@ export default function Header({ imgHeader, id }) {
         </a>
       </div>
 
-      <div className={` ${styles.listMenu}   ${menu == true ? styles.active : ''}`}>
-        <SpanHeader link="#apresentacao" text="Home" />
-        <SpanHeader link="#sobreMim" text="Sobre" />
-        <SpanHeader link="#habilidades" text="Skills" />
-        <SpanHeader link="#contato" text="Contato" />
+      <div onClick={open} className={` ${styles.listMenu} ${menu == true ? styles.active  : ''}`}>
+        <SpanHeader onClick={open} link="#apresentacao" text="Home" />
+        <SpanHeader onClick={open} link="#sobreMim" text="Sobre" />
+        <SpanHeader onClick={open} link="#habilidades" text="Skills" />
+        <SpanHeader onClick={open} link="#contato" text="Contato" />
       </div>
     </div>
   );
 }
+
+
+export default Header

@@ -1,11 +1,12 @@
 .container {
   border-left: 3px solid #eeeeee;
+  margin: 5px 5px 5px 5px;
 }
 
 .container .content {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 1rem;
   width: 80%;
   padding-left: 10px;
   padding-right: 10px;
@@ -14,8 +15,9 @@
 .container .header {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 8px;
   padding-left: 10px;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 800px) {

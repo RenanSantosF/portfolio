@@ -16,9 +16,6 @@ export default function AboutMe() {
       <Text text="Tenho foco no desenvolvimento utilizando JavaScript, TypeScript, React, Node JS, Tailwind CSS, e outras tecnologias para criar aplicações Web de alta qualidade e valor." />
       <Text text="Sou ágil e consistente na aprendizagem de novas tecnologias, adaptando-me facilmente a mudanças e pronto para enfrentar novos desafios. Em três palavras, me defino como otimista, determinado e esforçado." />
       </div>
-      
-
-      
     </div>
   );
 }

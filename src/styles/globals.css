@@ -15,6 +15,11 @@ html {
   scroll-padding-top: 120px;
 }
 
+::selection {
+  background-color: #5c5c5c;
+  border-radius: 10px;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -24,7 +29,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #313131;;
+  background-color: #424242;;
   border-radius: 10px;
 }
 
