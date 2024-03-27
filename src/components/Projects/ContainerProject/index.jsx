@@ -31,7 +31,7 @@ export default function ContainerProject({
           </div>
         </div>
 
-        <div>
+        <div className={styles.textLimited}>
           <Text text={projectContent} />
         </div>
         <div className={styles.viewProjet}>

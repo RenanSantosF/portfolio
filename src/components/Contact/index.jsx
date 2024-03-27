@@ -3,6 +3,7 @@ import SubtitleTitle from "../SubtitleTitle";
 import styles from "./styles.module.css";
 import imgEmailCOntact from "../../assets/email.png";
 import imgGitHub from "../../assets/github.png";
+import imgLinkedIn from "../../assets/linkedin.png";
 import ContainerRedes from "./ContainerRedes";
 import ButtonDirect from "./ButtonDirect";
 import ButtonCopy from "./ButtonCopy";
@@ -24,7 +25,7 @@ export default function Contact() {
         />
         <ContainerRedes
           contatoRede="https://www.linkedin.com/in/renan-santos-7946bb213/"
-          imgEmailCOntact={imgEmailCOntact}
+          imgEmailCOntact={imgLinkedIn}
           nomeRede="LinkedIn"
           TypeButton={<ButtonDirect blank='_blank' href='https://www.linkedin.com/in/renan-santos-7946bb213/' text='Ir para a página' />}
         />

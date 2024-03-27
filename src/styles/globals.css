@@ -32,6 +32,23 @@ html {
   margin-top: 120px;
 }
 
+.aumentarAltura {
+  animation-name: aumentar;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aumentar {
+  from {
+    height: 90px;
+  }
+  to {
+    height: 200px;
+  }
+}
+
+
+
 @media (max-width: 1500px) {
   html {
     scroll-padding-top: 112px;

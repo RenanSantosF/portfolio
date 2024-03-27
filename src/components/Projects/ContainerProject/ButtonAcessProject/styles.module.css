@@ -50,7 +50,27 @@
 }
 
 
-@media (max-width: 455px) {
+@media (max-width: 996px) {
+  .container .deploy {
+    font-size: 0.8rem;
+  }
+
+  .container .repository {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 826px) {
+  .container .deploy {
+    font-size: 1rem;
+  }
+
+  .container .repository {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 475px) {
   .container .deploy {
     font-size: 0.8rem;
   }
