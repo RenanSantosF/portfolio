@@ -73,9 +73,11 @@
 @media (max-width: 475px) {
   .container .deploy {
     font-size: 0.8rem;
+    width: 35%;
   }
 
   .container .repository {
     font-size: 0.8rem;
+    width: 40%;
   }
 }

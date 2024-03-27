@@ -4,51 +4,33 @@
   top: 1%;
   right: 5%;
   left: 5%;
-  padding: 1.0%;
+  padding: 1%;
   border-radius: 0.2rem;
   background-color: #000000;
   box-shadow: 0px 4px 10px rgba(24, 24, 24, 0.3);
   z-index: 1;
   opacity: 0.9;
   transition: height 0.5s ease;
-
+  overflow: hidden;
 }
 
-.wrapper {
-  width: 100%;
+.menu {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
-.base {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.list {
+.listMenu {
+  gap: 5px;
   width: 40%;
   display: flex;
   justify-content: space-around;
-}
-
-.listMenuClose {
-  gap: 10px;
-  width: 40%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.listMenuOpen {
-  gap: 10px;
-  width: 40%;
-  display: flex;
+  margin-bottom: 0px;
 }
 
 .imgHeader {
-  width: 13%;
+  width: 40px;
   margin-left: 10px;
 }
 
@@ -65,18 +47,28 @@
   width: 20px;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (max-width: 1200px) {
-  .wrapper {
+  .container {
     flex-direction: column;
   }
 
-  .listMenuClose {
+  .listMenu {
     display: none;
+    opacity: 0.5;
+    transition: 0.4s ease;
   }
 
-  .listMenuOpen {
+  .active {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
   }
 

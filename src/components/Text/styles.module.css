@@ -3,9 +3,8 @@
   color: #dbdbdb;
 }
 
-
-@media (max-width: 800px) {
+@media (max-width: 550px) {
   .wrapper {
-    text-align:justify;
+    font-size: 0.93rem;
   }
 }
