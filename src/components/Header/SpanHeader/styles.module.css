@@ -1,23 +1,23 @@
-
-
 .wrapper {
   height: 2.5rem;
-  width:6rem;
+  width: 7.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #cfcfcf;
   text-decoration: none;
-  gap: 10px;
-
-
   transition: 0.4s ease;
-
 }
 
 .wrapper:hover {
   background-color: #969696;
   color: #202020;
   border-radius: 0.3rem;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 12rem;
+  }
 }

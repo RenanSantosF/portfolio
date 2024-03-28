@@ -62,7 +62,7 @@ html {
 
 @media (max-width: 1400px) {
   html {
-    scroll-padding-top: 100px;
+    scroll-padding-top: 115px;
   }
 
   #apresentacao {
@@ -78,7 +78,7 @@ html {
 
 @media (max-width: 700px) {
   html {
-    scroll-padding-top: 100px;
+    scroll-padding-top: 115px;
   }
 
   #apresentacao {
@@ -88,7 +88,7 @@ html {
 
 @media (max-width: 500px) {
   html {
-    scroll-padding-top: 90px;
+    scroll-padding-top: 120px;
   }
 
   #apresentacao {

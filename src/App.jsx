@@ -6,6 +6,7 @@ import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import ContainerProjectName from "./components/Projects/ContainerProject";
 function App() {
   return (
     <>
