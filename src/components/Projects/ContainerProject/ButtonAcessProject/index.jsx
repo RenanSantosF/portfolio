@@ -10,11 +10,11 @@ export default function ButtonAcessProject({
   return (
     <>
       <div className={styles.container}>
-        <a className={styles.deploy} href={linkButton1}>
+        <a target="_blank" className={styles.deploy} href={linkButton1}>
           {textButton1}
         </a>
 
-        <a className={styles.repository} href={linkButton2}>
+        <a target="_blank" className={styles.repository} href={linkButton2}>
           {textButton2}
         </a>
       </div>

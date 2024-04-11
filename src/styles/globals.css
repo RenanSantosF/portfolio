@@ -15,6 +15,8 @@ html {
   scroll-padding-top: 120px;
 }
 
+
+
 ::selection {
   background-color: #5c5c5c;
   border-radius: 10px;
@@ -29,7 +31,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #424242;;
+  background-color: #424242;
   border-radius: 10px;
 }
 
@@ -51,8 +53,6 @@ html {
     height: 200px;
   }
 }
-
-
 
 @media (max-width: 1500px) {
   html {
@@ -95,6 +95,3 @@ html {
     margin-top: 100px;
   }
 }
-
-
-
