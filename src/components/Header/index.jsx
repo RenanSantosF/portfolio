@@ -5,9 +5,7 @@ import SpanHeader from "./SpanHeader";
 import imgMenuOpen from "../../assets/menuOpen.png";
 import imgMenuClose from "../../assets/menuClose.png";
 
-
-const alternaCorProjetos = document.querySelectorAll('.alternaCorProjetos')
-
+const alternaCorProjetos = document.querySelectorAll(".alternaCorProjetos");
 
 const Header = ({ imgHeader, id }) => {
   const [menu, setmenu] = useState(false);
@@ -22,38 +20,34 @@ const Header = ({ imgHeader, id }) => {
       setAltura(altura === 90 && innerWidth < 1200 ? 307 : 90);
     }, 110);
 
-    let region = ev.target.dataset.info
+    let region = ev.target.dataset.info;
 
-    let idRegion = document.getElementById(`${region}`)
+    let idRegion = document.getElementById(`${region}`);
     if (idRegion) {
-      console.log(region)
-      if (region == 'projetos') {
-        
+      console.log(region);
+      if (region == "projetos") {
 
         setTimeout(() => {
-          alternaCorProjetos.forEach(item => {
-            item.classList.add('activeAlternaCorProjetos')
-          })
+          alternaCorProjetos.forEach((item) => {
+            item.classList.add("activeAlternaCorProjetos");
+          });
         }, 700)
 
 
 
         setTimeout(() => {
-          alternaCorProjetos.forEach(item => {
-            item.classList.remove('activeAlternaCorProjetos')
-          })
-        }, 2 * 1000)
-
-
+          alternaCorProjetos.forEach((item) => {
+            item.classList.remove("activeAlternaCorProjetos");
+          });
+        }, 2 * 1000);
       }
       setTimeout(() => {
-        idRegion.style.backgroundColor = '#112c40'
-      }, 700)
-      
-      
+        idRegion.style.backgroundColor = "#112c40";
+      }, 700);
+
       setTimeout(() => {
-        idRegion.style.backgroundColor = ''
-      }, 2 * 1000)
+        idRegion.style.backgroundColor = "";
+      }, 2 * 1000);
     }
   };
 
@@ -71,11 +65,36 @@ const Header = ({ imgHeader, id }) => {
         onClick={open}
         className={` ${styles.listMenu} ${menu == true ? styles.active : ""}`}
       >
-        <SpanHeader onClick={open} dataInfo="apresentacao" link="#apresentacao" text="Home" />
-        <SpanHeader onClick={open} dataInfo="sobreMim" link="#sobreMim" text="Sobre" />
-        <SpanHeader onClick={open} dataInfo="habilidades" link="#habilidades" text="Habilidades" />
-        <SpanHeader onClick={open} dataInfo="projetos" link="#projetos" text="Projetos" />
-        <SpanHeader onClick={open} dataInfo="contato" link="#contato" text="Contato" />
+        <SpanHeader
+          onClick={open}
+          dataInfo="apresentacao"
+          link="#apresentacao"
+          text="Home"
+        />
+        <SpanHeader
+          onClick={open}
+          dataInfo="sobreMim"
+          link="#sobreMim"
+          text="Sobre"
+        />
+        <SpanHeader
+          onClick={open}
+          dataInfo="habilidades"
+          link="#habilidades"
+          text="Habilidades"
+        />
+        <SpanHeader
+          onClick={open}
+          dataInfo="projetos"
+          link="#projetos"
+          text="Projetos"
+        />
+        <SpanHeader
+          onClick={open}
+          dataInfo="contato"
+          link="#contato"
+          text="Contato"
+        />
       </div>
     </div>
   );
