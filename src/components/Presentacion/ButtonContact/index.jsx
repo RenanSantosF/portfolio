@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-export default function ButtonContact({ text, href, blank }) {
+export default function ButtonContact({ text, href, blank, funcao }) {
   return (
-    <a className={styles.wrapper} target={blank} href={href}>
+    <a onClick={funcao} data-info="contato" className={styles.wrapper} target={blank} href={href}>
       {text}
     </a>
   );

@@ -6,11 +6,8 @@ import imgMenuOpen from "../../assets/menuOpen.png";
 import imgMenuClose from "../../assets/menuClose.png";
 
 
-const apresentacao = document.getElementById('apresentacao')
-const sobre = document.getElementById('sobreMim')
-const Habilidades = document.getElementById('habilidades')
-const projetos = document.getElementById('projetos')
-const contato = document.getElementById('contato')
+const alternaCorProjetos = document.querySelectorAll('.alternaCorProjetos')
+
 
 const Header = ({ imgHeader, id }) => {
   const [menu, setmenu] = useState(false);
@@ -29,6 +26,26 @@ const Header = ({ imgHeader, id }) => {
 
     let idRegion = document.getElementById(`${region}`)
     if (idRegion) {
+      console.log(region)
+      if (region == 'projetos') {
+        
+
+        setTimeout(() => {
+          alternaCorProjetos.forEach(item => {
+            item.classList.add('activeAlternaCorProjetos')
+          })
+        }, 700)
+
+
+
+        setTimeout(() => {
+          alternaCorProjetos.forEach(item => {
+            item.classList.remove('activeAlternaCorProjetos')
+          })
+        }, 2 * 1000)
+
+
+      }
       setTimeout(() => {
         idRegion.style.backgroundColor = '#112c40'
       }, 700)

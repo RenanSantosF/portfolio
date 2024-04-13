@@ -16,7 +16,7 @@ export default function ContainerProject({
 }) {
 
   return (
-    <div data-info='projetos' className={styles.container}>
+    <div data-info='projetos' className={`${styles.container} alternaCorProjetos`}>
       <div className={styles.imgProject}>
         <img className="hidden" src={imgProject} />
       </div>

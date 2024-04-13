@@ -8,6 +8,7 @@ import Container from "../Container"
 
 // Importação das imagens dos projetos
 import jogoVelha from "../../assets/jogoVelha.png"
+import imgBuscadorCep from "../../assets/imgBuscadorCep.png"
 
 //Importação dos ícones das tecnologias usadas no projeto
 import html from "../../assets/html.png";
@@ -27,8 +28,10 @@ export default function Projects() {
   return (
     <>
     <section id="projetos" className={styles.title} ><SubtitleTitle text='Projetos' /></section>;
-        <div id="containerProjetos" className={styles.container}>
+        <div className={styles.container}>
         
+
+
         <ContainerProject
           imgIconTecnologies={[
             <IconTec imgIconRedes={html} />,
@@ -44,8 +47,32 @@ export default function Projects() {
           textButton1="Ver projeto"
           textButton2="< Repositório />"
         />
+
+
+        <ContainerProject
+          imgIconTecnologies={[
+            <IconTec imgIconRedes={html} />,
+            <IconTec imgIconRedes={CSS} />,
+            <IconTec imgIconRedes={javascript} />,
+            <IconTec imgIconRedes={node} />,
+          ]}
+          projectTitle="Buscador de CEP"
+          projectContent="Um site que faz integração com uma API externa para buscar CEPs através de requisições GET, manipula os dados e exibe corretamente.
+          Esta integração simplifica o processo de busca de CEPs acrescenta eficiência e praticidade à experiência do usuário."
+          imgProject={imgBuscadorCep}
+          linkButton1="https://renansantosf.github.io/bucadorCep/"
+          linkButton2="https://github.com/RenanSantosF/bucadorCep"
+          textButton1="Ver projeto"
+          textButton2="< Repositório />"
+        />
+
+
       </div>
     </>
 
+    
+
   );
 }
+
+
