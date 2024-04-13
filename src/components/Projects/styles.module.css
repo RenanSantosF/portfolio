@@ -3,15 +3,31 @@
   flex-wrap: wrap;
   gap: 2%;
   justify-content: center;
-  margin: 2% 5% 1% 5%;
-  padding: 1.5%;
+  margin: 0% 5% 1% 5%;
+  padding: 0% 1.5% 1.5% 1.5%;
   border-radius: 0.2rem;
   height: auto;
 }
 
-
-@media (max-width:1400px) {
+@media (max-width: 1400px) {
   .container {
-    margin: 2% 2% 1% 2%;
+    margin: 0% 2% 1% 2%;
+  }
+}
+
+.title {
+  justify-content: center;
+  display: flex;
+  margin: 4% 30% 0 30%;
+  padding: 1%;
+  border-radius: 0.2rem;
+  background-color: #242424;
+  box-shadow: 0px 4px 10px rgba(24, 24, 24, 0.3);
+  transition: 0.8s ease;
+}
+
+@media (max-width: 1400px) {
+  .title {
+    margin: 10% 20% 0.2% 20%;
   }
 }

@@ -5,18 +5,39 @@ import SpanHeader from "./SpanHeader";
 import imgMenuOpen from "../../assets/menuOpen.png";
 import imgMenuClose from "../../assets/menuClose.png";
 
+
+const apresentacao = document.getElementById('apresentacao')
+const sobre = document.getElementById('sobreMim')
+const Habilidades = document.getElementById('habilidades')
+const projetos = document.getElementById('projetos')
+const contato = document.getElementById('contato')
+
 const Header = ({ imgHeader, id }) => {
   const [menu, setmenu] = useState(false);
   const [altura, setAltura] = useState(90);
 
-  const open = () => {
+  const open = (ev) => {
     setTimeout(() => {
       setmenu(menu === false && innerWidth < 1200 ? true : false);
     }, 110);
 
     setTimeout(() => {
-      setAltura(altura === 90 && innerWidth < 1200 ? 276.44 : 90);
+      setAltura(altura === 90 && innerWidth < 1200 ? 307 : 90);
     }, 110);
+
+    let region = ev.target.dataset.info
+
+    let idRegion = document.getElementById(`${region}`)
+    if (idRegion) {
+      setTimeout(() => {
+        idRegion.style.backgroundColor = '#112c40'
+      }, 700)
+      
+      
+      setTimeout(() => {
+        idRegion.style.backgroundColor = ''
+      }, 2 * 1000)
+    }
   };
 
   return (
@@ -33,10 +54,11 @@ const Header = ({ imgHeader, id }) => {
         onClick={open}
         className={` ${styles.listMenu} ${menu == true ? styles.active : ""}`}
       >
-        <SpanHeader onClick={open} link="#apresentacao" text="Home" />
-        <SpanHeader onClick={open} link="#sobreMim" text="Sobre" />
-        <SpanHeader onClick={open} link="#habilidades" text="Habilidades" />
-        <SpanHeader onClick={open} link="#contato" text="Contato" />
+        <SpanHeader onClick={open} dataInfo="apresentacao" link="#apresentacao" text="Home" />
+        <SpanHeader onClick={open} dataInfo="sobreMim" link="#sobreMim" text="Sobre" />
+        <SpanHeader onClick={open} dataInfo="habilidades" link="#habilidades" text="Habilidades" />
+        <SpanHeader onClick={open} dataInfo="projetos" link="#projetos" text="Projetos" />
+        <SpanHeader onClick={open} dataInfo="contato" link="#contato" text="Contato" />
       </div>
     </div>
   );

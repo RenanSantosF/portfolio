@@ -19,7 +19,7 @@ import sass from "../../assets/sass.png";
 
 export default function Skills() {
   return (
-    <div className={styles.container}>
+    <div id="containerHabilidades" className={styles.container}>
       <SubtitleTitle text="Habilidades" />
       <div className={styles.skills}>
         <SkillsIcon text={<Title text="HTML" />} imgIconSkills={html} />

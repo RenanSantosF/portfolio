@@ -3,6 +3,7 @@ import ContainerProject from "./ContainerProject";
 import styles from "./styles.module.css";
 import imgProjectTest from "../../assets/imgProjectTest.jpg";
 import IconTec from "../IconTec";
+import Container from "../Container"
 
 
 // Importação das imagens dos projetos
@@ -20,25 +21,31 @@ import node from "../../assets/node.png";
 import mongo from "../../assets/mongo.png";
 import git from "../../assets/git.png";
 import sass from "../../assets/sass.png";
+import SubtitleTitle from "../SubtitleTitle";
 
 export default function Projects() {
   return (
-    <div className={styles.container}>
-      <ContainerProject
-        imgIconTecnologies={[
-          <IconTec imgIconRedes={html} />,
-          <IconTec imgIconRedes={CSS} />,
-          <IconTec imgIconRedes={javascript} />,
-          <IconTec imgIconRedes={node} />,
-        ]}
-        projectTitle="Jogo da Velha Online"
-        projectContent="Jogo da velha em tempo real, multiplayer, desenvolvido usando o protocolo WS, através do framework Socket.Io."
-        imgProject={jogoVelha}
-        linkButton1="https://jogo-da-velha-online-1.onrender.com/"
-        linkButton2="https://github.com/RenanSantosF/jogo-da-velha-Online"
-        textButton1="Ver projeto"
-        textButton2="< Repositório />"
-      />
-    </div>
+    <>
+    <section id="projetos" className={styles.title} ><SubtitleTitle text='Projetos' /></section>;
+        <div id="containerProjetos" className={styles.container}>
+        
+        <ContainerProject
+          imgIconTecnologies={[
+            <IconTec imgIconRedes={html} />,
+            <IconTec imgIconRedes={CSS} />,
+            <IconTec imgIconRedes={javascript} />,
+            <IconTec imgIconRedes={node} />,
+          ]}
+          projectTitle="Jogo da Velha Online"
+          projectContent="Desenvolvi um jogo da velha multiplayer em tempo real utilizando o protocolo WebSocket (WS) através do framework Socket.IO. Esse protocolo, ao contrário do HTTP, possibilita que o servidor envie informações para o cliente sem que este precise solicitar, tornando viável a criação de aplicações como chats e jogos online."
+          imgProject={jogoVelha}
+          linkButton1="https://jogo-da-velha-online-1.onrender.com/"
+          linkButton2="https://github.com/RenanSantosF/jogo-da-velha-Online"
+          textButton1="Ver projeto"
+          textButton2="< Repositório />"
+        />
+      </div>
+    </>
+
   );
 }

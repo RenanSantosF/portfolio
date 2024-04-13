@@ -16,7 +16,7 @@ export default function ContainerProject({
 }) {
 
   return (
-    <div className={styles.container}>
+    <div data-info='projetos' className={styles.container}>
       <div className={styles.imgProject}>
         <img className="hidden" src={imgProject} />
       </div>
