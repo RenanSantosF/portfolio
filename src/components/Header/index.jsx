@@ -30,15 +30,14 @@ const Header = ({ imgHeader, id }) => {
           alternaCorProjetos.forEach((item) => {
             item.classList.add("activeAlternaCorProjetos");
           });
+
+          setTimeout(() => {
+            alternaCorProjetos.forEach((item) => {
+              item.classList.remove("activeAlternaCorProjetos");
+            });
+          }, 2 * 1000);
         }, 700)
 
-
-
-        setTimeout(() => {
-          alternaCorProjetos.forEach((item) => {
-            item.classList.remove("activeAlternaCorProjetos");
-          });
-        }, 2 * 1000);
       }
       setTimeout(() => {
         idRegion.style.backgroundColor = "#112c40";

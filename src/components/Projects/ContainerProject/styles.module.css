@@ -12,9 +12,9 @@
   transition: 0.6s ease;
 }
 
-.container:hover {
+/* .container:hover {
   background-color: #3d3d3d;
-}
+} */
 
 .container .imgProject {
   width: 100%;
