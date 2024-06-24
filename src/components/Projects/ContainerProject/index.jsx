@@ -7,12 +7,15 @@ import ButtonAcessProject from "./ButtonAcessProject";
 export default function ContainerProject({
   projectTitle,
   projectContent,
+  projectContent2,
   imgProject,
   textButton1,
   textButton2,
   linkButton1,
   linkButton2,
   imgIconTecnologies,
+  usuario,
+  senha,
 }) {
 
   return (
@@ -33,6 +36,12 @@ export default function ContainerProject({
 
         <div className={styles.textLimited}>
           <Text text={projectContent} />
+          <div>
+            <Text text={projectContent2} />
+            <span className={styles.text}>{usuario}</span>
+            <span className={styles.text}>{senha}</span>
+          </div>
+          
         </div>
         <div className={styles.viewProjet}>
           <ButtonAcessProject 

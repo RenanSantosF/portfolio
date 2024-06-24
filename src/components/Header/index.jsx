@@ -24,7 +24,6 @@ const Header = ({ imgHeader, id }) => {
 
     let idRegion = document.getElementById(`${region}`);
     if (idRegion) {
-      console.log(region);
       if (region == "projetos") {
 
         setTimeout(() => {

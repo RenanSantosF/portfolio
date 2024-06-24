@@ -48,7 +48,6 @@
   width: auto;
 }
 
-
 .tecnologiesIcon div {
   display: flex;
   gap: 0.4rem;
@@ -91,4 +90,16 @@
   .content {
     gap: 10px;
   }
+}
+
+.textLimited > div {
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  color: #dbdbdb;
+}
+
+.textLimited > div > .text {
+  padding: 0 0 0 20px;
 }

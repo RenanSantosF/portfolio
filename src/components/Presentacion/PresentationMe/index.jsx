@@ -26,7 +26,7 @@ export default function PresentationMe() {
     <div className={styles.container}>
       <Title text="Olá, Eu sou Renan Santos" />
       <Title text="Tenho 22 anos" />
-      <Subtitle text="Desenvolvedor Web" />
+      <Subtitle text="Desenvolvedor Front-End" />
       <div className={styles.contat}>
         <ButtonContact funcao={open} href="#contato" text="Contate-me" />
       </div>
